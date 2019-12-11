@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+@font-face {
+    font-family: "FuturaCM";
+    src: url("../fonts/Futura.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SofiaRegular";
+    src: url("../fonts/SofiaProRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SketchOpen";
+    src: url("../fonts/KGSecondChancesSketch.ttf") format("truetype");
+}
+
+/* @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(1em);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateX(0em);
+    }
+} */
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+        transform: translateX(-1em);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateX(0em);
+    }
+}
+
+.kimgarrard {
+  font-family: "SketchOpen";
+  font-size: 4em;
+  position: absolute;
+}
+
+.img1box {
+    animation-duration: 2s;
+    animation-name: fadeIn;
+}
+
+.section1 > article {
+    animation-duration: 3s;
+    animation-name: fadeIn;
+}
+
+section a article:hover {
+    background-color: #f6eee2;
+    cursor: pointer;
+}
+
+.animation1 {
+    animation-duration: 1s;
+    animation-name: fadeIn2;
+}
+
+.animation2 {
+    animation-duration: 2s;
+    animation-name: fadeIn2;
+}
+
+section > div > img:nth-of-type(2) {
+    position: absolute;
+    width: 75%;
+}
+
+section > div:nth-of-type(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  max-width: 100%;
+  display: flex;
+  border: 20px solid white;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
+
+section > div:nth-of-type(1) > img:nth-of-type(1) {
+  width: 100%;
+}
+
+section > div:nth-of-type(2) {
+  display: flex;
+  width: 100%;
+  height: 95vh;
+  max-width: 100%;
+}
+
+section > div:nth-of-type(2):not(.bluegreenbox) {
+  margin-top: 5%;
+}
+
+section > div:nth-of-type(2) > div {
+  width: 50%;
+  border: 20px solid white;
+  position: relative;
+  z-index: -5;
+}
+
+
+
+
+
+body,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 40em;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    /* box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.04); */
+}
+
+nav > a {
+    font-family: "SofiaRegular";
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+}
+
+section {
+    display: flex;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.versiering {
+    position: fixed;
+    z-index: -5;
+    margin-top: 77vh;
+    margin-left: 0;
+}
+
+.versiering img {
+  width: 75%;
+}
+
+.bluegreenbox {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: -10;
+    height: 100vh;
+    width: 100%;
+}
+
+.bluegreen {
+    background-color: #B1EDE8;
+    background-color: #8ec8b4;
+    //background-color: #54c1b5;
+    //background-color: #ADA0A6;
+    //background-color: #848FA5;
+    position: relative;
+    z-index: -5;
+    width: 50%;
+    height: 85vh;
+}
+
+@media (min-width: 20em and max-width: 50em) {
+    div > div {
+        width: 100%;
+    }
+}
+
+
+.img1box > img:nth-of-type(1) {
+    width: 100%;
+}
+
+article {
+    width: 30em;
+    height: 30em;
+    background-color: #f4eadb;
+    border: 20px solid white;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 3em;
+    margin-left: 55%;
+    margin-top: 12%;
+    max-width: 100%;
+}
+
+h2 {
+    font-family: "FuturaCM";
+    font-size: 5em;
+    margin: 0;
+    margin-top: -0.2em;
+    color: black;
+}
+
+p {
+    font-family: "FuturaCM";
+    font-size: 3em;
+    margin-top: 0.5em;
+    color: darkgrey;
+}
+
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+section {
+    position: relative;
+}
+
+section > div > img:nth-of-type(2) {
+    position: absolute;
+}
+
+
+section div a img {
+    position: absolute;
+    width: 75%;
+}
+
+section > div article {
+    margin-left: 55%;
+}
+
+section > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-left: 10%;
+    margin-top: 8%;
+    max-width: 100%;
+    display: flex;
+    border: 20px solid white;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+.section2 div {
+  margin-left: 32.5%;
+}
+
+.section2 article {
+  margin-left: 10%;
+}
+
+.imgtestdiv {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .imgtest {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/01Transavia.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgtest:hover {
+  background-image: url("images/aandacht.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+} */
+
+.testclass {
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 0 !important;
+  animation: fade 0.3s forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+main > section {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+
+
+
+.test {
+    opacity: 0;
+}
