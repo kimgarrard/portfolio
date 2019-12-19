@@ -161,10 +161,12 @@ section {
     z-index: -5;
     margin-top: 77vh;
     margin-left: 0;
+    bottom: 3vw;
 }
 
 .versiering img {
   width: 75%;
+  width: 30vw;
 }
 
 .bluegreenbox {
@@ -203,22 +205,45 @@ section {
 article {
     width: 30em;
     height: 30em;
+    width: 28.3vw;
+    height: 28.1vw;
     background-color: #f4eadb;
     border: 20px solid white;
+    border: 1vw solid white;
     z-index: 0;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     padding: 3em;
+    padding: 3vw;
     margin-left: 55%;
     margin-top: 12%;
     max-width: 100%;
 }
 
+
+section > div:nth-of-type(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  max-width: 100%;
+  display: flex;
+  border: 20px solid white;
+  border: 1vw solid white;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
+
+
+
 h2 {
     font-family: "FuturaCM";
     font-size: 5em;
+    font-size: 4.7vw;
     margin: 0;
     margin-top: -0.2em;
     color: black;
@@ -227,6 +252,7 @@ h2 {
 p {
     font-family: "FuturaCM";
     font-size: 3em;
+    font-size: 2.8vw;
     margin-top: 0.5em;
     color: darkgrey;
 }
@@ -266,7 +292,7 @@ section > div {
     margin-top: 8%;
     max-width: 100%;
     display: flex;
-    border: 20px solid white;
+    border: 1vw solid white;
     align-items: center;
     justify-content: center;
 }
@@ -345,4 +371,62 @@ main > section {
 
 .test {
     opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+@media(min-width: 20em) and (max-width: 47em) {
+  main > section {
+    height: 50vh;
+  }
+
+  .bluegreen {
+      width: 100%;
+  }
+
+  section > div:nth-of-type(1) {
+    margin: 0;
+    border: 2.5vw solid white;
+    width: 100%;
+  }
+
+  article {
+      background-color: transparent;
+      margin-top: 32vh;
+      border: none;
+      width: 100%;
+      margin-left: 0 !important;
+  }
+
+  article:hover {
+    background-color: transparent !important;
+  }
+
+  h2 {
+      font-family: "FuturaCM";
+      font-size: 12vw;
+      margin: 0;
+      margin-top: -0.2em;
+      color: black;
+      position: relative;
+  }
+
+  p {
+      font-family: "FuturaCM";
+      font-size: 3em;
+      font-size: 6vw;
+      margin-top: 0em;
+      color: darkgrey;
+      position: relative;
+  }
+
+  .versiering img {
+      width: 100%;
+  }
 }
